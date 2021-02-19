@@ -362,7 +362,7 @@ int tofirst() {
 	int isjin = 0;
 	printf("내가 1등보다 진동에 가까우면 1 입력, 아니라면 0 입력\n");
 	scanf_s("%d", &isjin);
-	if (isjin != 0)
+	if (isjin == 0)
 		score += 100;
 	printf("론 화료 시\n타가를 쏘아 1등으로 역전 : %d점 이상\n1등을 쏘아 1등으로 역전 : %d점 이상\n\n", tenup(score), tenup(score / 2));
 	printf("쯔모 화료 시\n내가 친일 때 : %d점 이상\n1등이 친일 때 : %d점 이상\n1등이 친이 아닐 때 : %d점 이상\n", tenup(score*3/4), tenup(score*2/3), tenup(score*4/5));
